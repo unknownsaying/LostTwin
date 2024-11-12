@@ -1,6 +1,6 @@
 Imports System
 
-Module VeryColdWorld
+Module ColdWorld
     Sub Main()
         Console.WriteLine("Welcome to the Very Cold World")
 
