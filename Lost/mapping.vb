@@ -8,10 +8,9 @@ Module ASCIIMapGenerator
 
         ' Generate the map
         GenerateMap(map)
-
         ' Display the map
         DisplayMap(map)
-
+        
         Console.WriteLine("Press any key to exit...")
         Console.ReadKey()
     End Sub
@@ -24,15 +23,17 @@ Module ASCIIMapGenerator
                 Dim terrainType As Integer = rnd.Next(100)
                 Select Case terrainType
                     Case 0 To 20
-                        map(y, x) = "." ' Grass
+                        map(x, y) = "." ' Grass
                     Case 21 To 40
-                        map(y, x) = "^" ' Mountains
+                        map(x, y) = "^" ' Mountains
                     Case 41 To 60
-                        map(y, x) = "T" ' Trees
+                        map(x, y) = "T" ' Trees
                     Case 61 To 80
                         map(y, x) = "~" ' Water
                     Case Else
                         map(y, x) = "#" ' Rocks
+                    Case Else
+                        map(y, x) = "g" ' Glasses
                 End Select
             Next
         Next
