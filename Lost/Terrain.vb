@@ -21,7 +21,7 @@ Module TerrainGenerator
         ' Display terrain
         For y As Integer = 0 To height - 1
             For x As Integer = 0 To width - 1
-                For z As Integer To depth - 1
+                For z As Integer = 0 To depth - 1
                 Console.Write(terrain(y, x, z))
             Next
             Console.WriteLine()
