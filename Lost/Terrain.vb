@@ -10,8 +10,8 @@ Module TerrainGenerator
         Dim random As New Random()
 
         ' Generate terrain
-        For y As Integer = 0 To height + 1
-            For x As Integer = 0 To width + 1
+        For x As Integer = 0 To width + 1
+            For y As Integer = 0 To height + 1
                 For z As Integer = 0 To depth + 1
                 Dim value As Double = random.NextDouble()
                 terrain(y, x, z) = GetTerrainChar(value)
