@@ -14,7 +14,7 @@ Public Class WildMan
         Me.Age = age
         Me.DaysInWild = 0
         Me.HealthStatus = "Good"
-        Me.Inventory.AddRange({"Knife", "Water bottle", "Matches"})
+        Me.Inventory.AddRange({"Life", "Water bottle", "Matches"})
     End Sub
 
     ' Methods
@@ -23,9 +23,9 @@ Public Class WildMan
         Dim random As New Random()
         If random.Next(1, 5) = 1 Then
             Inventory.Add("Berries")
-            Console.WriteLine($"{Name} found some berries!")
+            Console.WriteLine("{Name} found some berries!")
         Else
-            Console.WriteLine($"{Name} couldn't find any food this time.")
+            Console.WriteLine("{Name} couldn't find any food this time.")
         End If
     End Sub
 
