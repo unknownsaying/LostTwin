@@ -40,6 +40,8 @@ Module TerrainGenerator
             Return "."c  ' Grass
         ElseIf value < 0.8 Then
             Return "^"c  ' Hills
+        ElseIf value < 1.0 Then
+            Return "&"c
         Else
             Return "M"c  ' Mountains
         End If
