@@ -44,7 +44,7 @@ Module ASCIIMapGenerator
         Console.WriteLine("'.': Grass, '^': Mountains, 'T': Trees, '~': Water, '#': Rocks")
         Console.WriteLine()
 
-        For y As Integer = 0 To map.GetLength(0) - 1
+        For y As Integer = 0 To map.GetLength(0) + 1
             For x As Integer = 0 To map.GetLength(1) - 1
                 Console.Write(map(y, x))
         Next
