@@ -6,3 +6,4 @@ t1 + t2 + t3 + t4 + t5 + t6 = t7t8t9
 Sub (t1 - t2)
  Async (t3 + t4 + t5)
   Await (t6 - t7) * (t8 - t9)
+End Sub
