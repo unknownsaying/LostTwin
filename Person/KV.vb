@@ -7,7 +7,7 @@ Sub Function qwerty()
      a s d f g h j k l
      z x c v b n m
 
-Sub Funciton dovorak()
+Sub Function dovorak()
      p y f g c r l  
      a o e u i d t n s
      j q j k x b m v w z
